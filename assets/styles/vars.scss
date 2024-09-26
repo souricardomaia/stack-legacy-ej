@@ -1,0 +1,28 @@
+
+//COLORS
+
+$colorPrimary: #01012C;
+$colorSecondary: #F21F3C;
+
+$colorBlue: #1A1A5B;
+$colorBlueDark: #01012C;
+$colorBlueLight: #528FFE;
+
+$colorGray: #EDEDED;
+$colorGrayDark: #121212;
+$colorGrayLight: #f9f9f9;
+
+$colorRed: #F21F3C;
+$colorRedDark: darken($colorRed,15%);
+$colorRedLight: lighten($colorRed,20%);
+
+
+
+//FONTS
+
+$fontHeader: 'Roboto';
+$fontHeaderWeight: 600;
+
+$fontText: 'Roboto';
+$fontTextWeight: 400;
+

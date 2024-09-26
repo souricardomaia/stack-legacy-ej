@@ -1,0 +1,26 @@
+$animationDuration: 2s;
+
+.fadeIn{
+    animation: fadeIn;
+    animation-duration: $animationDuration;
+}
+
+.fadeInUp{
+    animation: fadeInUp;
+    animation-duration: $animationDuration;
+}
+
+.zoomIn{
+    animation: zoomIn;
+    animation-duration: $animationDuration;
+}
+
+.zoomInUp{
+    animation: zoomInUp;
+    animation-duration: $animationDuration;
+}
+
+.pulse{
+    animation: pulse;
+    animation-duration: 1s;
+}
