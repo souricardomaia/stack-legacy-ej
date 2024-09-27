@@ -1,7 +1,7 @@
 
 export const apiKey = 'AIzaSyDpsVe8UfcKNaLf5HUl2clVQFTu2703nl8'
 
-export const apiUrl = 'https://www.googleapis.com/books/v1/volumes'
+export const apiURL = 'https://www.googleapis.com/books/v1/volumes'
 //?q=juridico&key=
 
 export const apiRequest = async (args) => {
@@ -35,6 +35,13 @@ export const apiRequest = async (args) => {
 
     try {
         const data = await $.ajax(options)
+
+       if (args.callback != false) {
+            let callback = args.callback
+            callback(data)
+        }else{
+            return data
+        }
     } catch(error) {
         console.error("API request error:", error)
         throw error
