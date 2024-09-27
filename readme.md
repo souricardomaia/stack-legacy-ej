@@ -8,3 +8,4 @@ npm run dev - para rodar
 - Javascript 
 - CSS / Sass
 - Vite
+
