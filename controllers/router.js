@@ -1,3 +1,5 @@
+import { ui } from './ui.js'
+
 var routes = {},
 defaultRoute = 'home'
 
@@ -16,5 +18,8 @@ export const router = () => {
     $.when($.ready)
     .then(function() {
         $.router.run('#app','home')
+        $.router.onRouteChanged( function(e, route, params){
+            ui()
+        })
     })
 }
