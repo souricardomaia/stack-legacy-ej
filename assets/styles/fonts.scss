@@ -1,1 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+.fc-white{
+    color: white;
+}
+
+.fc-primary{
+    color: $colorPrimary;
+}
+
+.fc-secondary{
+    color: $colorSecondary;
+}
+
+.fc-blue{
+    color: $colorBlue;
+}
+
+.fc-blue-light{
+    color: $colorBlueLight;
+}
+
+.fc-blue-dark{
+    color: $colorBlueDark;
+}
+
+
+.fc-red{
+    color: $colorRed;
+}
+
+.fc-red-light{
+    color: $colorRedLight;
+}
+
+.fc-red-dark{
+    color: $colorRedDark;
+}
+
+
+.fc-gray{
+    color: $colorGray;
+}
+
+.fc-gray-light{
+    color: $colorGrayLight;
+}
+
+.fc-gray-dark{
+    color: $colorGrayDark;
+}
+
+
+$n: 60;
+@while $n >= 0 {
+
+    @media only screen and (max-width: 414px){
+        .fs-xs-#{$n}{
+            font-size: ($n)+px !important;
+        }
+    }
+    
+    $n: $n - 1;
+}

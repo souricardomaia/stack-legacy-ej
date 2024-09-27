@@ -13,8 +13,8 @@ $colorGrayDark: #121212;
 $colorGrayLight: #f9f9f9;
 
 $colorRed: #F21F3C;
-$colorRedDark: darken($colorRed,15%);
-$colorRedLight: lighten($colorRed,20%);
+$colorRedDark: color.adjust($colorRed, $lightness: -20%);
+$colorRedLight: color.adjust($colorRed, $lightness: 20%);
 
 
 
@@ -25,4 +25,5 @@ $fontHeaderWeight: 600;
 
 $fontText: 'Roboto';
 $fontTextWeight: 400;
+
 

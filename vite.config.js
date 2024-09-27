@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
-import path from 'path';
+import { resolve } from 'path';
+import handlebars from 'vite-plugin-handlebars';
 import sass from 'vite-plugin-sass';
 
 export default defineConfig({
@@ -16,5 +17,8 @@ export default defineConfig({
                 style: 'compressed',
             },
         }),
+        handlebars({
+            partialDirectory: resolve(__dirname, 'partials'),
+        })
     ],
 });
